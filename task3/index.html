@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <table id="table">
+          <thead>
+            <tr>
+              <th width="10">
+                <input
+                  type="image"
+                  src="delete.png"
+                  alt="Submit"
+                  align="middle"
+                  height="25"
+                  width="25"
+                  onclick="deleteRows('table');"
+                />
+              </th>
+              <th width="120">Ім'я</th>
+              <th width="120">Прізвище</th>
+              <th width="150">Емейл</th>
+              <th>Дата створення</th>
+              <th width="120">Дія</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div>
+        <div class="bg-blue">
+          <h1>Створити профіль</h1>
+          <hr />
+        </div>
+
+        <form class="form" name="form" autocomplete="off">
+          <p><input type="text" id="name" placeholder="Name" required /></p>
+          <p>
+            <input type="text" id="surname" placeholder="Surname" required />
+          </p>
+          <p><input type="email" id="email" placeholder="Email" required /></p>
+
+          <button type="button" onclick="main()" class="btns">
+            Додати карту
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <!-- <script src="delMultRows.js"></script> -->
+</html>

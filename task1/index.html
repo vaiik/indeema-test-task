@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="block">
+        <h1 align='center'>Каса</h1>
+        <form action="">
+          <p>Сума</p>
+          <input type="decimal" id="sum" placeholder="Сума" step="0.01" />
+          <p>Ціна товару</p>
+          <input type="decimal" id="price" placeholder="Ціна товару" step="0.01"/>
+          <button type="button" onclick="change()">обчислити решту</button>
+          <p align='center' id="error">Ваша решта становить: <span id='change'></span></p>
+        </form>
+      </div>
+
+      <div>
+        <button class="btn" type='button' onclick='reloadPage()'>Нова операція</button>
+      </div>
+
+      <div class="block">
+        <h1 align='center'>Номінал решти</h1>
+        <div id="banknotes" class="wrap"></div>
+      </div>
+    </div>
+    <img src="" alt="">
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+
+.container {
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+}
+
+#table {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td:first-child {
+    background: #afcde7;
+    color: white;
+    padding: 10px 10px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td{
+    background: #d8e6f3;
+    padding: 10px 10px;
+}
+
+td:first-child, th:first-child {
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.bg-blue {
+    background-color: #afcde7;
+    padding: 16px;
+    color: white;
+}
+
+.form {
+    padding: 14px;
+    border: 8px solid #afcde7;
+    background-color: #d8e6f3;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 4px;
+}
+
+.btns {
+    background-color: #afcde7;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+a:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
